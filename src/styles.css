@@ -1,0 +1,51 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the Product component */
+.product-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(25% - 20px); /* 4 products per row (25% width with 20px spacing) */
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-container img {
+  width: 100%;
+  height: auto;
+}
+
+.product-container h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.product-container p {
+  margin: 0;
+}
+
+/* Grid layout for the ProductGrid component */
+.product-grid-container {
+  display: flex;
+  justify-content: center; /* Center the child horizontally */
+  align-items: center; /* Center the child vertically */
+  height: 100vh; /* Optional: Set the container height to fill the viewport */
+  background-color: #f0f0f0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Adjust the minmax value to control the product card width */
+  grid-gap: 20px; /* Adjust the gap between products as per your design */
+  justify-items: center; /* Center the products horizontally in the grid */
+}
+

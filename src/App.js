@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React from 'react';
+//import { useState } from 'react';
+import './header.css';
+import './styles.css';
+import Header from "../src/Components/Header/Header";
+import ProductGrid from './Components/ProductGrid/Productgrid';
 import data from "./data/data.json";
-import ProductGrid from './Components/ProductGrid/ProductGrid';
-//import "./App.css"; 
 
-function App() {
-  const [allProducts, setAllProducts] = useState(data);
-
+const App = () => {
+const products = data;
   return (
     <div>
-      <h1>Hello, Student!</h1>
-      <ProductGrid products={allProducts} />
+      <Header />
+      <main>
+        <h1>Welcome to my app!</h1>
+      </main>
+      <container>
+        <ProductGrid products={products} />
+      </container>
     </div>
   );
-}
-
+};
 export default App;
+        
 
