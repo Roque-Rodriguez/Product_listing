@@ -3,8 +3,8 @@ import Product from "../Products/Products";
 import data from "../../data/data.json";
 
 const ProductGrid = () => {
-  const [sortOrder, setSortOrder] = useState("ascending"); // State to manage sorting order
-  const [categoryFilter, setCategoryFilter] = useState("all"); // State to manage category filter
+  const [sortOrder, setSortOrder] = useState("ascending"); 
+  const [categoryFilter, setCategoryFilter] = useState("all"); 
 
   const sortProducts = (products, order) => {
     return products.slice().sort((a, b) => {

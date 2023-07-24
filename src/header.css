@@ -1,7 +1,7 @@
-/* src/Header.css */
+
 header {
-  background-color: #f5d76e; /* Vivid yellow header background */
-  color: #333333; /* Darker text color */
+  background-color: #f5d76e; 
+  color: #333333; 
   padding: 20px 0;
   text-align: center;
 }
@@ -18,7 +18,7 @@ nav li {
 }
 
 nav a {
-  color: #d40711; /* Darker text color */
+  color: #d40711; 
   text-decoration: none;
   font-weight: bold;
 }
@@ -29,5 +29,5 @@ nav a:hover {
 
 h1 {
   text-align: center;
-  color: #d40711; /* Darker text color */
+  color: #d40711; 
 }
