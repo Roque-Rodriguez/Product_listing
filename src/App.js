@@ -12,7 +12,7 @@ const products = data;
     <div>
       <Header />
       <main>
-        <h1>Welcome to my app!</h1>
+        
       </main>
       <container>
         <ProductGrid products={products} />
